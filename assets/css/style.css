@@ -1,0 +1,81 @@
+/* remove browser defaults*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*the body will cahnage all items in the actual body side*/
+body {
+  color: #39a6b2;
+  font-family: Helvetica, Arial, Helvetica, sans-serif;
+}
+/* apply styles to <header ot top of the page> */
+header {
+  padding: 20px 35px;
+  background-color: #39a6b2;
+}
+
+/* applies 10px to the top, 15px to the right, 20px tot he bottom. 25px to the left (in that spcific clockwise order)*/
+header {
+  padding: 10px 15px 20px 25px;
+}
+
+/* List items on top of the NAV bar */
+header {
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+}
+/* this is the run butty title in the NAV bar*/
+header h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: #fce138;
+  margin: 0;
+  display: inline;
+}
+/* add stiles to the a elements buttons to the right*/
+header a {
+  color: #fce138;
+}
+/* this is adding the yellow color to the buttons*/
+header a {
+  text-decoration: none;
+  color: #fce138;
+}
+/* float right is moving the buttons to the right*/
+header nav {
+  float: right;
+  margin-right: 7px 0;
+}
+/*takes the list itemst and aligs them*/
+header nav ul li {
+  display: inline;
+}
+header nav ul li a {
+  margin: 0 30px;
+  font-weight: lighter;
+  font-size: 22px;
+}
+/*FOOTER Area design*/
+footer {
+  background: #fce138;
+  width: 100%;
+  padding: 40px 35px;
+}
+footer h2 {
+  display: inline;
+  color: #024e76;
+  font-size: 30px;
+  margin: 0;
+}
+footer div {
+  float: right;
+  line-height: 1.5;
+  text-align: right;
+}
+footer a {
+  color: #024e76;
+}
+/*ADD the BOX sizing option to the * on top of this page so it alligns the writing in the footer page*/

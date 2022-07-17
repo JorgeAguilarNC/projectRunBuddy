@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- this is what shows on the web tab-->
+    <title>Run-Buddy</title>
+  </head>
+
+  <body>
+    <!--Navigation-->
+    <header>
+      <!--h1 tittle of the page usually on the right or left showing as a logo maybe-->
+      <h1>Run-Buddy</h1>
+      <!-- Nav bar is the buttons on top of the page that link you to other areas of the page or outside links -->
+      <nav>
+        <!-- unordered list items is the name of the button in this example-->
+        <ul>
+          <li>
+            <!-- the a(anchor element) is the link to the other parts of the page. -->
+            <a href="#what-we-do">What we Do</a>
+          </li>
+          <li>
+            <a href="#What-You-do">What You Do</a>
+          </li>
+          <li>
+            <a href="#your-trainers">Your Trainers</a>
+          </li>
+          <li>
+            <a href="#reach-out">Reach Out</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--Hero/jumbotron is added after the main page was designed-->
+    <section>
+      <div>
+        <h3>Get Started Today</h3>
+        <p>
+          Fill out this form and one of our trainers will schedule a consult
+        </p>
+        <!-- Add form element -->
+        <form>
+          <!-- LABEL text not only offers a visual directive of what to enter but also programmatically links to the associated INPUT both label and Input are self-closing tags-->
+          <label for="name">Enter full name:</label>
+          <input type="text" placeholder="Your Name" name="name" id="name" />
+          <label for="email">Enter email address:</label>
+          <input
+            type="text"
+            placeholder="Email Address"
+            name="email"
+            id="email"
+          />
+          <label for="phone">Enter a telephone number:</label>
+          <input
+            type="text"
+            placeholder="Phone Number"
+            name="phone"
+            id="phone"
+          />
+          <!-- beggining of a RADIO BUTTON The radio button elements must have the same name attribute in order to be associated with the same radio group. This is how the browser identifies that a group of choices can have an exclusive singular answer. In this case, the value of the radio group in name is trainer-confirm.-->
+          <p>
+            Have you worked out with a trainer before?
+            <input type="radio" name="trainer-confirm" id="trainer-yes" />
+            <!--The for attribute references the radio button to which the label belongs. The value for the for attribute must match the value of the id attribute of the <input> element.-->
+            <label for="trainer-yes">Yes</label>
+            <input type="radio" name="trainer-confirm" id="trainer-no" />
+            <label for="trainer-no">No</label>
+          </p>
+          <!--adds the checkbox input-->
+          <p>
+            <label for="checkbox">
+              I acknowledge that I am at least 18 years of age.
+            </label>
+            <input type="checkbox" name="age-confirm" id="checkbox" />
+          </p>
+          <!-- this adds the bubmit button Currently, the requirements in the mock-up don't have an action to assign to the button, but typically we'd assign a URL path in the <form> element in the action attribute.-->
+          <button type="submit">Get running!</button>
+        </form>
+      </div>
+    </section>
+    <!--Hero end-->
+
+    <!-- What We Do-->
+    <section>
+      <h2>What we Do</h2>
+    </section>
+    <!--What You Do-->
+    <section>
+      <h2>What You Do</h2>
+    </section>
+    <!--Meet The Trainers-->
+    <section>
+      <h2>Meet The Trainers</h2>
+    </section>
+    <!--"reach out" section-->
+    <section>
+      <h2>Reach Out</h2>
+    </section>
+    <!--Footer is usually what goes on the bottom of the page-->
+    <footer>
+      <!-- made by footer left side-->
+      <h2>❤️ Made with love by Run Buddy.</h2>
+      <!--adding privacy policy to the page in the footer bar NOTICE the br this is to create line break between left side-->
+      <div>
+        <!--we're using the # as a placeholder for a privacy policy page that doesn't exist yet-->
+        <a href="#">Read Our Privacy Policy</a><br />
+        <!--&copy ** this used to create a little copyright symbol This is called an HTML entity, a special code that starts with an ampersand (&) and can be used to create symbols.-->
+        &copy; 2019 Run Buddy, Inc.
+      </div>
+    </footer>
+  </body>
+</html>

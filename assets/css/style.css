@@ -9,24 +9,20 @@ body {
   color: #39a6b2;
   font-family: Helvetica, Arial, Helvetica, sans-serif;
 }
+/* List items on top of the NAV bar */
 /* apply styles to <header ot top of the page> */
 header {
   padding: 20px 35px;
   background-color: #39a6b2;
 }
 
-/* applies 10px to the top, 15px to the right, 20px tot he bottom. 25px to the left (in that spcific clockwise order)*/
-header {
-  padding: 10px 15px 20px 25px;
-}
-
-/* List items on top of the NAV bar */
-header {
+/* applies 10px to the top, 15px to the right, 20px tot he bottom. 25px to the left (in that spcific clockwise order)header {
   padding-top: 10px;
   padding-right: 15px;
   padding-bottom: 20px;
   padding-left: 25px;
-}
+}*/
+
 /* this is the run butty title in the NAV bar*/
 header h1 {
   font-weight: bold;
@@ -36,10 +32,7 @@ header h1 {
   display: inline;
 }
 /* add stiles to the a elements buttons to the right*/
-header a {
-  color: #fce138;
-}
-/* this is adding the yellow color to the buttons*/
+/* this is adding the yellow color to the text*/
 header a {
   text-decoration: none;
   color: #fce138;
@@ -78,4 +71,65 @@ footer div {
 footer a {
   color: #024e76;
 }
-/*ADD the BOX sizing option to the * on top of this page so it alligns the writing in the footer page*/
+/*go to the top of this page and ADD the BOX sizing option to the * on top of this page so it alligns the writing in the footer page*/
+
+/*add padding to all Section elements this adds consistent look*/
+section {
+  padding: 60px;
+}
+/* Hero Style Start */
+.hero {
+  background-image: url("../images/hero-bg.jpg");
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+/*To enable the absolute *positioning relative of the form container to be taken relative to the hero section, we need to make the hero section's position relative. To do this, go to the CSS rule for the hero and add a declaration that sets the position to relative. Your CSS should now look like the following code*/
+/* this is the box inside the hero image*/
+/*this adds the box to the bottom left side*/
+.hero-form {
+  border: 3px solid #024e76;
+  background-color: #fce138;
+  padding: 20px;
+  width: 500px;
+  color: #024e76;
+  position: absolute;
+  /*As you can see, the form is now nestled in the corner, just as we positioned it. Let's add pixels to offset the form container until it has reached the correct position we want.*/
+  bottom: 120px;
+  right: 140px;
+  /*bottom: 0px;
+  right: 0px;*/
+}
+.hero-form h3 {
+  font-size: 24px;
+  margin: 0;
+}
+.hero-form p {
+  margin: 5px 0 15px 0;
+}
+/*Now let's add a border, display each line separately, make the font larger, extend each input field box the length of the form container, and use the navy font color we used for the footer font color.
+
+/*Style the Radio Buttons
+Adding some horizontal spacing for the <label> element in the radio button elements helps the user not misinterpret which selection is for which answer. Let's go ahead and do that now.Add the following code to style.css:*/
+.form-input {
+  border: 1px solid #024e76;
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: #024e76;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.hero-form label {
+  margin: 0 5px;
+}
+/* BUTTON *** Style the get running button*/
+.hero-form button {
+  color: #fce138;
+  background-color: #024e76;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+/* Hero Style End */

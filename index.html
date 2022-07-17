@@ -35,23 +35,30 @@
       </nav>
     </header>
     <!--Hero/jumbotron is added after the main page was designed-->
-    <section>
-      <div>
+    <section class="hero">
+      <div class="hero-form">
         <h3>Get Started Today</h3>
         <p>
           Fill out this form and one of our trainers will schedule a consult
         </p>
         <!-- Add form element -->
         <form>
-          <!-- LABEL text not only offers a visual directive of what to enter but also programmatically links to the associated INPUT both label and Input are self-closing tags-->
+          <!-- LABEL text not only offers a visual directive of what to enter but also programmatically links to the associated INPUT both label and Input are self-closing tags/class form input was added due to hml5-->
           <label for="name">Enter full name:</label>
-          <input type="text" placeholder="Your Name" name="name" id="name" />
+          <input
+            type="text"
+            placeholder="Your Name"
+            name="name"
+            id="name"
+            class="form-input"
+          />
           <label for="email">Enter email address:</label>
           <input
             type="text"
             placeholder="Email Address"
             name="email"
             id="email"
+            class="form-input"
           />
           <label for="phone">Enter a telephone number:</label>
           <input
@@ -59,6 +66,7 @@
             placeholder="Phone Number"
             name="phone"
             id="phone"
+            class="form-input"
           />
           <!-- beggining of a RADIO BUTTON The radio button elements must have the same name attribute in order to be associated with the same radio group. This is how the browser identifies that a group of choices can have an exclusive singular answer. In this case, the value of the radio group in name is trainer-confirm.-->
           <p>
@@ -83,33 +91,64 @@
     </section>
     <!--Hero end-->
 
-    <!-- What We Do-->
-    <section>
-      <h2>What we Do</h2>
+    <!-- "what we do" *****************************************************section -->
+    <section id="what-we-do">
+      <h2>What We Do</h2>
+      <p>
+        butcher selfies chambray shabby chic gentrify readymade yr Echo Park
+        XOXO Tumblr normcore Banksy direct trade Blue Bottle chillwave you
+        probably haven't heard of them single-origin coffee Vice fanny pack
+        fixie Odd Future Austin fingerstache pickled twee synth Wes Anderson
+        Thundercats viral bitters flannel meggings narwhal Marfa Schlitz
+        sustainable Intelligentsia umami deep v craft
+      </p>
     </section>
-    <!--What You Do-->
-    <section>
+
+    <!-- "what you do" section*About SVG Files
+This is XML, which is like a cousin to HTML. Unlike PNGs or JPGs, which are made up of pixels, SVGs (or Scalable Vector Graphics) are defined as a series of points and lines (the <path> elements you see in the XML) that are filled in with color. SVG images can accommodate basically any screen size without losing quality because the graphics will scale. That makes SVGs perfect for things like icons and logos.
+
+In the first <div> under the <h2>What You Do</h2> heading, add the following <img> element: -->
+    <section id="what-you-do">
       <h2>What You Do</h2>
-    </section>
-    <!--Meet The Trainers-->
-    <section>
-      <h2>Meet The Trainers</h2>
-    </section>
-    <!--"reach out" section-->
-    <section>
-      <h2>Reach Out</h2>
+
+      <div>
+        <img src="./assets/images/step-1.svg" />
+        <h3>Step 1: Fill Out the Form Above.</h3>
+        <p>You're already here, so why not?</p>
+      </div>
+
+      <div>
+        <img src="./assets/images/step-2.svg"/>
+        <h3>Step 2: Consult with One of Our Trainers.</h3>
+        <p>Are you here to build muscle, lose weight, or just feel good?</p>
+      </div>
+
+      <div>
+        <img src="./assets/images/step-3.svg"/>
+        <h3>Step 3: Get Running.</h3>
+        <p>
+          Hit the ground running (literally) once your trainer lays out your
+          plan.
+        </p>
+      </div>
+
+      <div>
+        <img src="./assets/images/step-4.svg"
+        <h3>Step 4: See Results.</h3>
+        <p>Bi-weekly checkins with your trainer will keep you focused</p>
+      </div>
     </section>
     <!--Footer is usually what goes on the bottom of the page-->
-    <footer>
-      <!-- made by footer left side-->
-      <h2>❤️ Made with love by Run Buddy.</h2>
-      <!--adding privacy policy to the page in the footer bar NOTICE the br this is to create line break between left side-->
-      <div>
-        <!--we're using the # as a placeholder for a privacy policy page that doesn't exist yet-->
-        <a href="#">Read Our Privacy Policy</a><br />
-        <!--&copy ** this used to create a little copyright symbol This is called an HTML entity, a special code that starts with an ampersand (&) and can be used to create symbols.-->
-        &copy; 2019 Run Buddy, Inc.
-      </div>
-    </footer>
   </body>
+  <footer>
+    <!-- made by footer left side-->
+    <h2>❤️ Made with love by Run Buddy.</h2>
+    <!--adding privacy policy to the page in the footer bar NOTICE the br this is to create line break between left side-->
+    <div>
+      <!--we're using the # as a placeholder for a privacy policy page that doesn't exist yet-->
+      <a href="#">Read Our Privacy Policy</a><br />
+      <!--&copy ** this used to create a little copyright symbol This is called an HTML entity, a special code that starts with an ampersand (&) and can be used to create symbols.-->
+      &copy; 2019 Run Buddy, Inc.
+    </div>
+  </footer>
 </html>
